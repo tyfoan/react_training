@@ -61,7 +61,7 @@ class App extends React.Component {
   
   addNewCard = (cardInfo) => {
   this.setState(prevState => ({
-  cards: prevState.cards.contact(cardInfo)
+  cards: prevState.cards.concat(cardInfo)
   }));
   }
 
